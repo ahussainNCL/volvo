@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../Nordlink.Contracts/Nordlink.Contracts.csproj" />
+    <ProjectReference Include="../Nordlink.Storage/Nordlink.Storage.csproj" />
+  </ItemGroup>
+</Project>

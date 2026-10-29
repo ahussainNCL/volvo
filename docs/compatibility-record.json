@@ -1,0 +1,26 @@
+{
+  "target": {
+    "manufacturer": "Volvo",
+    "model": "V40",
+    "modelYear": 2013,
+    "engine": "D2"
+  },
+  "environment": "hardware",
+  "state": "unknown",
+  "vin": null,
+  "topdonModel": null,
+  "driverVersion": null,
+  "cem": null,
+  "ecm": null,
+  "respondingModules": [],
+  "evidence": [],
+  "reportedIssue": "TOPDON registration reportedly points to a missing library; requires Windows inspection.",
+  "blockers": [
+    "Windows PC and exact TOPDON interface",
+    "Established applicable bus/addressing definitions",
+    "Real vehicle/module identification",
+    "Licensed diagnostic definitions"
+  ],
+  "source": "User target specification; no measured vehicle results",
+  "recordedAt": "2026-10-29T03:02:34.284475+00:00"
+}

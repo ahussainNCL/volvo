@@ -1,0 +1,916 @@
+[
+  {
+    "id": "topdon-discovery",
+    "category": "Vehicle & interface",
+    "title": "Discover TOPDON registrations in both Windows registry views",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Discover TOPDON registrations in both Windows registry views",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Windows + official TOPDON driver",
+      "real 2013 V40 D2",
+      "licensed bus/addressing definitions"
+    ],
+    "acceptanceTest": "Report both registry views, actual path, existence, PE architecture, version and publisher on Windows.",
+    "evidence": [],
+    "state": "implementedUnverified",
+    "implementationStatus": "Native/store implementation exists; real Windows/hardware acceptance unverified.",
+    "implementationEvidence": [
+      "Linux compile: zero warnings/errors; real Windows registry acceptance unrun"
+    ]
+  },
+  {
+    "id": "driver-health",
+    "category": "Vehicle & interface",
+    "title": "Diagnose missing/broken TOPDON library and select worker architecture",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Diagnose missing/broken TOPDON library and select worker architecture",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Windows + official TOPDON driver",
+      "real 2013 V40 D2",
+      "licensed bus/addressing definitions"
+    ],
+    "acceptanceTest": "Record missing DLL before repair, official reinstall and matching worker launch; never guess DLLs.",
+    "evidence": [],
+    "state": "implementedUnverified",
+    "implementationStatus": "Native/store implementation exists; real Windows/hardware acceptance unverified.",
+    "implementationEvidence": [
+      "FoundationTests.MissingDllAndNonPeAreRejected",
+      "FoundationTests.PeMachineDeterminesWorkerArchitecture (x86/x64 fixtures)"
+    ]
+  },
+  {
+    "id": "interface-lifecycle",
+    "category": "Vehicle & interface",
+    "title": "Open, read driver/firmware/API versions and close interface",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Open, read driver/firmware/API versions and close interface",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Windows + official TOPDON driver",
+      "real 2013 V40 D2",
+      "licensed bus/addressing definitions"
+    ],
+    "acceptanceTest": "Use the actual TOPDON on Windows; unplug USB and verify explicit fault/reconnect behavior.",
+    "evidence": [],
+    "state": "implementedUnverified",
+    "implementationStatus": "Native/store implementation exists; real Windows/hardware acceptance unverified.",
+    "implementationEvidence": [
+      "FoundationTests.WorkerFailureIsBoundedAndDoesNotCrashCaller (7 failure modes)",
+      "FoundationTests.WorkerCanExchangeVersionedCorrelatedMessages; actual native driver unrun"
+    ]
+  },
+  {
+    "id": "vehicle-vin",
+    "category": "Vehicle & interface",
+    "title": "Identify actual vehicle VIN",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Identify actual vehicle VIN",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Windows + official TOPDON driver",
+      "real 2013 V40 D2",
+      "licensed bus/addressing definitions"
+    ],
+    "acceptanceTest": "Read VIN using an established applicable diagnostic procedure and compare with the vehicle.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "module-inventory",
+    "category": "Vehicle & interface",
+    "title": "Identify responding modules and HW/SW identifiers",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Identify responding modules and HW/SW identifiers",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Windows + official TOPDON driver",
+      "real 2013 V40 D2",
+      "licensed bus/addressing definitions"
+    ],
+    "acceptanceTest": "Record real CEM, ECM and responding module part/software/hardware identities.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "connection-voltage",
+    "category": "Vehicle & interface",
+    "title": "Read supported connection and voltage status",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Read supported connection and voltage status",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Windows + official TOPDON driver",
+      "real 2013 V40 D2",
+      "licensed bus/addressing definitions"
+    ],
+    "acceptanceTest": "Verify documented driver status/voltage queries against a trusted measured reference; unsupported queries stay explicit.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "whole-scan",
+    "category": "Diagnostics",
+    "title": "Scan whole vehicle",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Scan whole vehicle",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Exact module identities",
+      "licensed diagnostic definitions",
+      "trusted reference tool"
+    ],
+    "acceptanceTest": "Match responding modules and DTC results with a trusted tool on this V40.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "module-scan",
+    "category": "Diagnostics",
+    "title": "Scan selected module",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Scan selected module",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Exact module identities",
+      "licensed diagnostic definitions",
+      "trusted reference tool"
+    ],
+    "acceptanceTest": "Match per-module results with the same vehicle and reference.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "dtc-details",
+    "category": "Diagnostics",
+    "title": "Interpret named DTCs, flags, counters, timestamps and freeze frames",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Interpret named DTCs, flags, counters, timestamps and freeze frames",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Exact module identities",
+      "licensed diagnostic definitions",
+      "trusted reference tool"
+    ],
+    "acceptanceTest": "Validate each supported detail against licensed module definitions; report unsupported fields individually.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "dtc-clear",
+    "category": "Diagnostics",
+    "title": "Clear at supported module granularity",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Clear at supported module granularity",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Exact module identities",
+      "licensed diagnostic definitions",
+      "trusted reference tool"
+    ],
+    "acceptanceTest": "Review exact clear scope, execute explicitly, verify with a confirmation scan.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "diagnostic-report",
+    "category": "Diagnostics",
+    "title": "Produce confirmation scan and downloadable report",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Produce confirmation scan and downloadable report",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Exact module identities",
+      "licensed diagnostic definitions",
+      "trusted reference tool"
+    ],
+    "acceptanceTest": "Report actual supported fields, identities, provenance and timestamps; no secret material.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "parameter-discovery",
+    "category": "Live data",
+    "title": "Discover supported module parameters",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Discover supported module parameters",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed parameter definitions",
+      "real modules",
+      "reference scaling evidence"
+    ],
+    "acceptanceTest": "Enumerate only parameters applicable to the measured module.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "parameter-scaling",
+    "category": "Live data",
+    "title": "Scale parameters with correct units",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Scale parameters with correct units",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed parameter definitions",
+      "real modules",
+      "reference scaling evidence"
+    ],
+    "acceptanceTest": "Compare raw/scaled values and units against licensed definitions and reference tool.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "live-views",
+    "category": "Live data",
+    "title": "Show gauges, table and graph",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Show gauges, table and graph",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed parameter definitions",
+      "real modules",
+      "reference scaling evidence"
+    ],
+    "acceptanceTest": "Verify real timestamped values and gaps across all three views.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Foundation fixture/intake only; actual vehicle capability blocked.",
+    "implementationEvidence": [
+      "Chromium e2e/workspace.spec.ts (simulation recording graph/table/gauge; no real scaling evidence)"
+    ]
+  },
+  {
+    "id": "favourites-thresholds",
+    "category": "Live data",
+    "title": "Use favourites and thresholds",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Use favourites and thresholds",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed parameter definitions",
+      "real modules",
+      "reference scaling evidence"
+    ],
+    "acceptanceTest": "Persist per-environment choices and test threshold alerts against recorded samples.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Foundation fixture/intake only; actual vehicle capability blocked.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "recordings",
+    "category": "Live data",
+    "title": "Record timestamped values and gaps",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Record timestamped values and gaps",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed parameter definitions",
+      "real modules",
+      "reference scaling evidence"
+    ],
+    "acceptanceTest": "Capture real values, units, monotonic timestamps and explicit gaps.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Foundation fixture/intake only; actual vehicle capability blocked.",
+    "implementationEvidence": [
+      "FoundationTests.RecordingRoundTripAndCsvPreserveTimestampUnitAndGap",
+      "Published host simulation recording checks"
+    ]
+  },
+  {
+    "id": "recording-replay",
+    "category": "Live data",
+    "title": "Replay recordings and export CSV",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Replay recordings and export CSV",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed parameter definitions",
+      "real modules",
+      "reference scaling evidence"
+    ],
+    "acceptanceTest": "Replay and CSV match captured timestamps, values, units and gaps without formula injection.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Foundation fixture/intake only; actual vehicle capability blocked.",
+    "implementationEvidence": [
+      "Chromium replay/download assertions; 25 fixture samples with 2 gaps",
+      "FoundationTests.CsvNeutralizesSpreadsheetFormulas"
+    ]
+  },
+  {
+    "id": "cem-algorithm",
+    "category": "Security access",
+    "title": "Audit and establish own applicable reusable CEM PIN decoder",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Audit and establish own applicable reusable CEM PIN decoder",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Identified CEM variant",
+      "established applicable algorithm",
+      "public research/licence audit",
+      "Windows DPAPI"
+    ],
+    "acceptanceTest": "Record algorithm source/licence and applicability to the identified CEM; no invented proprietary algorithm.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "cem-checkpoint",
+    "category": "Security access",
+    "title": "Checkpoint search with exact identity and algorithm version",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Checkpoint search with exact identity and algorithm version",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Identified CEM variant",
+      "established applicable algorithm",
+      "public research/licence audit",
+      "Windows DPAPI"
+    ],
+    "acceptanceTest": "Reject resume after vehicle/module/algorithm changes; handle interruption without mixing work.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "cem-verification",
+    "category": "Security access",
+    "title": "Independently verify reusable recovered CEM PIN",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Independently verify reusable recovered CEM PIN",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Identified CEM variant",
+      "established applicable algorithm",
+      "public research/licence audit",
+      "Windows DPAPI"
+    ],
+    "acceptanceTest": "Verify at least three distinct challenges and a fresh connection; temporary access is insufficient.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "cem-storage",
+    "category": "Security access",
+    "title": "Store recovered PIN with DPAPI and reveal explicitly",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Store recovered PIN with DPAPI and reveal explicitly",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Identified CEM variant",
+      "established applicable algorithm",
+      "public research/licence audit",
+      "Windows DPAPI"
+    ],
+    "acceptanceTest": "Actual recovered PIN is encrypted for the current Windows user and revealed only via authenticated non-cacheable local request.",
+    "evidence": [],
+    "state": "implementedUnverified",
+    "implementationStatus": "Native/store implementation exists; real Windows/hardware acceptance unverified.",
+    "implementationEvidence": [
+      "FoundationTests.SecurityCredentialWireContractHasMetadataOnly; DpapiRoundTripRequiresCurrentWindowsUser SKIPPED on Linux"
+    ]
+  },
+  {
+    "id": "other-security",
+    "category": "Security access",
+    "title": "Research exact other-module security procedures",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Research exact other-module security procedures",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Identified CEM variant",
+      "established applicable algorithm",
+      "public research/licence audit",
+      "Windows DPAPI"
+    ],
+    "acceptanceTest": "Decompose documented module-specific procedures and licensed provider requirements before implementation.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "config-backup",
+    "category": "Configuration",
+    "title": "Create original configuration backup",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Create original configuration backup",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Original backup",
+      "applicable setting definitions",
+      "demonstrated restoration",
+      "validated write procedure"
+    ],
+    "acceptanceTest": "Verify original bytes, identity, hash and source before any edit.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "config-compare",
+    "category": "Configuration",
+    "title": "Display readable settings and proposed comparison",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Display readable settings and proposed comparison",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Original backup",
+      "applicable setting definitions",
+      "demonstrated restoration",
+      "validated write procedure"
+    ],
+    "acceptanceTest": "Show exact original/proposed values and equipment dependencies.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "config-write",
+    "category": "Configuration",
+    "title": "Write and independently verify reviewed configuration",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Write and independently verify reviewed configuration",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Original backup",
+      "applicable setting definitions",
+      "demonstrated restoration",
+      "validated write procedure"
+    ],
+    "acceptanceTest": "Approval binds exact identity and inputs; execute once then read back independently.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "config-restore",
+    "category": "Configuration",
+    "title": "Demonstrate supported configuration restoration",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Demonstrate supported configuration restoration",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Original backup",
+      "applicable setting definitions",
+      "demonstrated restoration",
+      "validated write procedure"
+    ],
+    "acceptanceTest": "Demonstrate restoration on applicable hardware before enabling edits.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "retrofit-catalogue",
+    "category": "Retrofits",
+    "title": "Research individual supported V40 retrofits",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": null,
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Specific retrofit procedure",
+      "equipment evidence",
+      "module/software prerequisites",
+      "backup/restoration"
+    ],
+    "acceptanceTest": "Decompose each documented option activation; identify actual required equipment and software.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "retrofit-activation",
+    "category": "Retrofits",
+    "title": "Activate individually validated retrofit",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Activate individually validated retrofit",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Specific retrofit procedure",
+      "equipment evidence",
+      "module/software prerequisites",
+      "backup/restoration"
+    ],
+    "acceptanceTest": "Demonstrate preconditions, reviewed execution, readback and supported restoration per retrofit.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "firmware-import",
+    "category": "Programming",
+    "title": "Acquire/import licensed firmware with provenance",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Acquire/import licensed firmware with provenance",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed firmware source",
+      "exact module procedure",
+      "validated bench/spare hardware",
+      "power prerequisites"
+    ],
+    "acceptanceTest": "Validate licence/source, SHA-256, exact VIN/module compatibility and semantic package format.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Foundation fixture/intake only; actual vehicle capability blocked.",
+    "implementationEvidence": [
+      "FoundationTests.ArtifactImportVerifiesHashSourceLicenceAndApplicability; generic intake only, no firmware format validation"
+    ]
+  },
+  {
+    "id": "firmware-sequence",
+    "category": "Programming",
+    "title": "Program documented bootloader and block sequence",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Program documented bootloader and block sequence",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed firmware source",
+      "exact module procedure",
+      "validated bench/spare hardware",
+      "power prerequisites"
+    ],
+    "acceptanceTest": "Validate ordering, checksums, protocol and progress on bench/spare hardware first.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "firmware-verify",
+    "category": "Programming",
+    "title": "Run post-programming routines and verification",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Run post-programming routines and verification",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed firmware source",
+      "exact module procedure",
+      "validated bench/spare hardware",
+      "power prerequisites"
+    ],
+    "acceptanceTest": "Verify final software identity and each documented completion routine.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "recovery-research",
+    "category": "Recovery",
+    "title": "Research exact module-specific interruption recovery",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": null,
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Specific module state",
+      "validated interruption procedure",
+      "suitable bench/spare evidence"
+    ],
+    "acceptanceTest": "Identify interrupted state and documented restart/resume behavior; no generic recovery-ready claim.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "recovery-validation",
+    "category": "Recovery",
+    "title": "Validate identified recovery procedure on bench/spare hardware",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Validate identified recovery procedure on bench/spare hardware",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Specific module state",
+      "validated interruption procedure",
+      "suitable bench/spare evidence"
+    ],
+    "acceptanceTest": "Record each interruption point and successful validated recovery before installed-vehicle use.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "replacement-research",
+    "category": "Replacement modules",
+    "title": "Research individual replacement compatibility",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": null,
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Exact new/used module identities",
+      "compatibility and licensed adaptation procedures"
+    ],
+    "acceptanceTest": "Document part/software compatibility and supported new/used states per module.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "replacement-transfer",
+    "category": "Replacement modules",
+    "title": "Validate configuration/software transfer and adaptation",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Validate configuration/software transfer and adaptation",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Exact new/used module identities",
+      "compatibility and licensed adaptation procedures"
+    ],
+    "acceptanceTest": "Test each documented transfer, pairing and verification procedure independently.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "service-catalogue",
+    "category": "Service functions",
+    "title": "Catalogue exact supported calibrations, resets, bleeding and component tests",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": null,
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Documented individual routine",
+      "exact module",
+      "preconditions",
+      "expected results"
+    ],
+    "acceptanceTest": "Decompose actual V40 module routines with sources and prerequisites.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "service-execution",
+    "category": "Service functions",
+    "title": "Execute individually documented service routine",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Execute individually documented service routine",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Documented individual routine",
+      "exact module",
+      "preconditions",
+      "expected results"
+    ],
+    "acceptanceTest": "Review preconditions and exact inputs, execute explicitly and record expected measured result.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "key-research",
+    "category": "Keys & mileage/security",
+    "title": "Research exact V40 key operations",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": null,
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed applicable procedure/provider",
+      "exact operation and module",
+      "real evidence"
+    ],
+    "acceptanceTest": "Research entry only: specify documented operation, module, provider and licence before code.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "mileage-research",
+    "category": "Keys & mileage/security",
+    "title": "Research exact V40 mileage/security operations",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": null,
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed applicable procedure/provider",
+      "exact operation and module",
+      "real evidence"
+    ],
+    "acceptanceTest": "Research entry only: specify each lawful documented operation and audit/acceptance before code.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "repair-search",
+    "category": "Fault & repair guide",
+    "title": "Search code, symptom and system for causes and diagnostic direction",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Search code, symptom and system for causes and diagnostic direction",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed local VIN-relevant repair pack",
+      "actual vehicle identity",
+      "supported content schema"
+    ],
+    "acceptanceTest": "Match results to licensed locally imported VIN-relevant content.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "repair-material",
+    "category": "Fault & repair guide",
+    "title": "Display wiring, connectors, locations and repair procedures",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Display wiring, connectors, locations and repair procedures",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Licensed local VIN-relevant repair pack",
+      "actual vehicle identity",
+      "supported content schema"
+    ],
+    "acceptanceTest": "Verify applicability and licence; no scraped or invented repair material.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "support-history",
+    "category": "Remote assistance",
+    "title": "Maintain support-case history",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Maintain support-case history",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Existing authorised support provider",
+      "explicit user handoff",
+      "redaction review"
+    ],
+    "acceptanceTest": "Persist local cases with identities, provenance and timestamps.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "support-bundle",
+    "category": "Remote assistance",
+    "title": "Preview and export redacted diagnostic bundle",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Preview and export redacted diagnostic bundle",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Existing authorised support provider",
+      "explicit user handoff",
+      "redaction review"
+    ],
+    "acceptanceTest": "Review bundle contents; confirm no PINs/session tokens/encrypted credential material are exported.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  },
+  {
+    "id": "support-handoff",
+    "category": "Remote assistance",
+    "title": "Hand off explicitly to an existing support provider",
+    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "exactOperation": "Hand off explicitly to an existing support provider",
+    "moduleApplicability": [
+      "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
+    ],
+    "dependencies": [
+      "Existing authorised support provider",
+      "explicit user handoff",
+      "redaction review"
+    ],
+    "acceptanceTest": "User explicitly starts handoff through documented authorised provider; engineering staff remain external.",
+    "evidence": [],
+    "state": "blocked",
+    "implementationStatus": "Not implemented; ordered gate blocked by listed dependencies.",
+    "implementationEvidence": []
+  }
+]

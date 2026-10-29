@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+**/node_modules/
+frontend/dist/
+src/Nordlink.Gateway/wwwroot/
+data/
+artifacts/
+test-results/
+playwright-report/
+.local/
+*.user
+*.log

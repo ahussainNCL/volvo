@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../Nordlink.Contracts/Nordlink.Contracts.csproj" />
+    <ProjectReference Include="../Nordlink.Storage/Nordlink.Storage.csproj" />
+    <ProjectReference Include="../Nordlink.Vehicle/Nordlink.Vehicle.csproj" />
+    <ProjectReference Include="../Nordlink.Providers/Nordlink.Providers.csproj" />
+    <Content Include="../../docs/feature-register.json" Link="feature-register.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
