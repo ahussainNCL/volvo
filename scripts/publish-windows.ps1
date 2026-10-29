@@ -13,4 +13,5 @@ foreach ($arch in @('x86','x64')) {
 Checked { dotnet publish src/Nordlink.Gateway -c Release -r win-x64 --self-contained true -p:NordlinkPublishRoot="$PWD/artifacts/locks" -o artifacts/windows }
 New-Item -ItemType Directory -Force artifacts/windows/workers | Out-Null
 foreach ($arch in @('x86','x64')) { Copy-Item "artifacts/workers/win-$arch" artifacts/windows/workers/ -Recurse -Force }
+Checked { dotnet publish src/Nordlink.Helper -c Release -r win-x64 --self-contained true -p:NordlinkPublishRoot="$PWD/artifacts/locks" -o artifacts/windows/helper }
 Write-Host 'Portable Windows build prepared. Installer/clean-machine and real TOPDON validation remain in docs/hardware-validation.md.'

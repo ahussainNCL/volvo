@@ -18,3 +18,5 @@ For gate 1 record screenshots/log excerpts with secrets excluded, exact TOPDON m
 For every hardware acceptance capture: test ID; date; operator; environment=hardware; real VIN; module identifiers; tool/definition/firmware hashes and licence references; exact procedure/preconditions; expected vs measured result; interruptions; restoration/recovery evidence; storage/export review. Do not put the PIN itself into this record.
 
 Only evidence caused by actual vehicle equipment can justify `equipmentNonApplicable`. A missing definition, algorithm, provider, subscription or implementation remains `blocked`.
+
+Online helper: run the published Windows helper against the eventual HTTPS Heroku origin; validate official driver inspection/open/close and native crash/USB-removal behavior through the authenticated relay. Verify local PIN reveal remains unavailable remotely, local stores survive helper restarts and no cloud disconnect silently repeats commands. Cloud browser tests on Linux are infrastructure evidence only.

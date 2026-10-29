@@ -2,6 +2,7 @@
   <PropertyGroup><IsTestProject>true</IsTestProject><IsPackable>false</IsPackable></PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/Nordlink.Gateway/Nordlink.Gateway.csproj" />
+    <ProjectReference Include="../../src/Nordlink.Cloud/Nordlink.Cloud.csproj" />
     <ProjectReference Include="../../src/Nordlink.HardwareWorker/Nordlink.HardwareWorker.csproj" />
     <ProjectReference Include="../Nordlink.FixtureWorker/Nordlink.FixtureWorker.csproj" ReferenceOutputAssembly="false" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />

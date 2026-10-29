@@ -29,6 +29,16 @@ export interface BootstrapRequest {
   token: string;
 }
 
+export interface BridgeFrame {
+  version: number;
+  requestId: string;
+  kind: string;
+  route: string;
+  body: string | null;
+  status: number;
+  contentType: string;
+}
+
 export interface CapabilityDescriptor {
   id: string;
   category: string;
@@ -42,6 +52,10 @@ export interface CapabilityDescriptor {
   state: EvidenceState;
   implementationStatus: string;
   implementationEvidence: string[];
+}
+
+export interface CloudLogin {
+  password: string;
 }
 
 export interface ConfigurationBackup {
@@ -124,6 +138,15 @@ export interface FirmwarePackage {
   context: EvidenceContext;
 }
 
+export interface HelperPairRequest {
+  code: string;
+}
+
+export interface HelperPairResponse {
+  token: string;
+  expiresAt: string;
+}
+
 export interface InterfaceVersionInfo {
   driver: string;
   firmware: string;
@@ -159,6 +182,11 @@ export interface OperationJob {
   expiresAt: string;
   failure: string | null;
   context: EvidenceContext;
+}
+
+export interface PairingCode {
+  code: string;
+  expiresAt: string;
 }
 
 export interface ParameterDefinition {

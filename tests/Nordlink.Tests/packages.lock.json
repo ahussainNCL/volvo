@@ -148,6 +148,12 @@
           "xunit.extensibility.core": "[2.9.3]"
         }
       },
+      "nordlink.cloud": {
+        "type": "Project",
+        "dependencies": {
+          "Nordlink.Contracts": "[1.0.0, )"
+        }
+      },
       "nordlink.contracts": {
         "type": "Project"
       },

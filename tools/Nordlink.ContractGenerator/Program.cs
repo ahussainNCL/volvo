@@ -4,7 +4,7 @@ using System.Text.Json;
 using Nordlink.Contracts;
 
 var assembly = typeof(VehicleProfile).Assembly;
-var types = assembly.GetExportedTypes().Where(t => t.IsEnum || t.IsClass && t != typeof(WireJson) && t != typeof(PipeProtocol)).OrderBy(t => t.Name);
+var types = assembly.GetExportedTypes().Where(t => t.IsEnum || t.IsClass && !t.IsAbstract).OrderBy(t => t.Name);
 var nullability = new NullabilityInfoContext();
 var output = new StringBuilder("// Generated from Nordlink.Contracts. Do not edit; run scripts/generate-contracts.sh.\n\n");
 foreach (var type in types)

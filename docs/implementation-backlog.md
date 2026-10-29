@@ -48,3 +48,7 @@ Blocked by licensed local VIN-relevant repair material/schema and exact document
 Local support-case history and previewable redacted bundles can be developed independently after core behavior stabilizes, but are not yet implemented. Handoff requires an existing authorised support provider/documented interface and explicit user action. Produce a signed Windows installer and validate clean-machine install/uninstall after hardware gates. The portable publishing script is not an installer.
 
 No licences/subscriptions are purchased. Website-specific claim audit remains blocked by the managed proxy; the complete user-supplied matrix is registered.
+
+## Online website + Windows helper extension
+
+User selected a public website with an outbound Windows helper, superseding fully local-only presentation. Implemented: separate cloud host, personal sign-in, one-use browser-bound pairing, restricted authenticated relay, progress/live events, cloud browser wrapper and Heroku container files. Keep cloud infrastructure evidence separate from vehicle acceptance. Outstanding: real Windows helper/TOPDON validation, actual Heroku app/release/routing verification, clean-machine packaging and all existing vehicle gates. No hosting plan/add-on has been purchased.

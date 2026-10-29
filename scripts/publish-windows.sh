@@ -11,3 +11,5 @@ dotnet publish src/Nordlink.Gateway -c Release -r win-x64 --self-contained true 
   -p:NordlinkPublishRoot="$NORDLINK_ROOT/artifacts/locks" -o artifacts/windows
 mkdir -p artifacts/windows/workers
 cp -a artifacts/workers/win-x86 artifacts/workers/win-x64 artifacts/windows/workers/
+dotnet publish src/Nordlink.Helper -c Release -r win-x64 --self-contained true \
+  -p:NordlinkPublishRoot="$NORDLINK_ROOT/artifacts/locks" -o artifacts/windows/helper

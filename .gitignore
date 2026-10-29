@@ -3,6 +3,7 @@
 **/node_modules/
 frontend/dist/
 src/Nordlink.Gateway/wwwroot/
+src/Nordlink.Cloud/wwwroot/
 data/
 artifacts/
 test-results/

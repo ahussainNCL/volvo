@@ -3,7 +3,7 @@
     "id": "topdon-discovery",
     "category": "Vehicle & interface",
     "title": "Discover TOPDON registrations in both Windows registry views",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Discover TOPDON registrations in both Windows registry views",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -25,7 +25,7 @@
     "id": "driver-health",
     "category": "Vehicle & interface",
     "title": "Diagnose missing/broken TOPDON library and select worker architecture",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Diagnose missing/broken TOPDON library and select worker architecture",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -48,7 +48,7 @@
     "id": "interface-lifecycle",
     "category": "Vehicle & interface",
     "title": "Open, read driver/firmware/API versions and close interface",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Open, read driver/firmware/API versions and close interface",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -71,7 +71,7 @@
     "id": "vehicle-vin",
     "category": "Vehicle & interface",
     "title": "Identify actual vehicle VIN",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Identify actual vehicle VIN",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -91,7 +91,7 @@
     "id": "module-inventory",
     "category": "Vehicle & interface",
     "title": "Identify responding modules and HW/SW identifiers",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Identify responding modules and HW/SW identifiers",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -111,7 +111,7 @@
     "id": "connection-voltage",
     "category": "Vehicle & interface",
     "title": "Read supported connection and voltage status",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Read supported connection and voltage status",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -131,7 +131,7 @@
     "id": "whole-scan",
     "category": "Diagnostics",
     "title": "Scan whole vehicle",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Scan whole vehicle",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -151,7 +151,7 @@
     "id": "module-scan",
     "category": "Diagnostics",
     "title": "Scan selected module",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Scan selected module",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -171,7 +171,7 @@
     "id": "dtc-details",
     "category": "Diagnostics",
     "title": "Interpret named DTCs, flags, counters, timestamps and freeze frames",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Interpret named DTCs, flags, counters, timestamps and freeze frames",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -191,7 +191,7 @@
     "id": "dtc-clear",
     "category": "Diagnostics",
     "title": "Clear at supported module granularity",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Clear at supported module granularity",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -211,7 +211,7 @@
     "id": "diagnostic-report",
     "category": "Diagnostics",
     "title": "Produce confirmation scan and downloadable report",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Produce confirmation scan and downloadable report",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -231,7 +231,7 @@
     "id": "parameter-discovery",
     "category": "Live data",
     "title": "Discover supported module parameters",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Discover supported module parameters",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -251,7 +251,7 @@
     "id": "parameter-scaling",
     "category": "Live data",
     "title": "Scale parameters with correct units",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Scale parameters with correct units",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -271,7 +271,7 @@
     "id": "live-views",
     "category": "Live data",
     "title": "Show gauges, table and graph",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Show gauges, table and graph",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -293,7 +293,7 @@
     "id": "favourites-thresholds",
     "category": "Live data",
     "title": "Use favourites and thresholds",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Use favourites and thresholds",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -313,7 +313,7 @@
     "id": "recordings",
     "category": "Live data",
     "title": "Record timestamped values and gaps",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Record timestamped values and gaps",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -336,7 +336,7 @@
     "id": "recording-replay",
     "category": "Live data",
     "title": "Replay recordings and export CSV",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Replay recordings and export CSV",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -359,7 +359,7 @@
     "id": "cem-algorithm",
     "category": "Security access",
     "title": "Audit and establish own applicable reusable CEM PIN decoder",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Audit and establish own applicable reusable CEM PIN decoder",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -380,7 +380,7 @@
     "id": "cem-checkpoint",
     "category": "Security access",
     "title": "Checkpoint search with exact identity and algorithm version",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Checkpoint search with exact identity and algorithm version",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -401,7 +401,7 @@
     "id": "cem-verification",
     "category": "Security access",
     "title": "Independently verify reusable recovered CEM PIN",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Independently verify reusable recovered CEM PIN",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -422,7 +422,7 @@
     "id": "cem-storage",
     "category": "Security access",
     "title": "Store recovered PIN with DPAPI and reveal explicitly",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Store recovered PIN with DPAPI and reveal explicitly",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -445,7 +445,7 @@
     "id": "other-security",
     "category": "Security access",
     "title": "Research exact other-module security procedures",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Research exact other-module security procedures",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -466,7 +466,7 @@
     "id": "config-backup",
     "category": "Configuration",
     "title": "Create original configuration backup",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Create original configuration backup",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -487,7 +487,7 @@
     "id": "config-compare",
     "category": "Configuration",
     "title": "Display readable settings and proposed comparison",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Display readable settings and proposed comparison",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -508,7 +508,7 @@
     "id": "config-write",
     "category": "Configuration",
     "title": "Write and independently verify reviewed configuration",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Write and independently verify reviewed configuration",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -529,7 +529,7 @@
     "id": "config-restore",
     "category": "Configuration",
     "title": "Demonstrate supported configuration restoration",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Demonstrate supported configuration restoration",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -550,7 +550,7 @@
     "id": "retrofit-catalogue",
     "category": "Retrofits",
     "title": "Research individual supported V40 retrofits",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": null,
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -571,7 +571,7 @@
     "id": "retrofit-activation",
     "category": "Retrofits",
     "title": "Activate individually validated retrofit",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Activate individually validated retrofit",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -592,7 +592,7 @@
     "id": "firmware-import",
     "category": "Programming",
     "title": "Acquire/import licensed firmware with provenance",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Acquire/import licensed firmware with provenance",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -615,7 +615,7 @@
     "id": "firmware-sequence",
     "category": "Programming",
     "title": "Program documented bootloader and block sequence",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Program documented bootloader and block sequence",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -636,7 +636,7 @@
     "id": "firmware-verify",
     "category": "Programming",
     "title": "Run post-programming routines and verification",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Run post-programming routines and verification",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -657,7 +657,7 @@
     "id": "recovery-research",
     "category": "Recovery",
     "title": "Research exact module-specific interruption recovery",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": null,
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -677,7 +677,7 @@
     "id": "recovery-validation",
     "category": "Recovery",
     "title": "Validate identified recovery procedure on bench/spare hardware",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Validate identified recovery procedure on bench/spare hardware",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -697,7 +697,7 @@
     "id": "replacement-research",
     "category": "Replacement modules",
     "title": "Research individual replacement compatibility",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": null,
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -716,7 +716,7 @@
     "id": "replacement-transfer",
     "category": "Replacement modules",
     "title": "Validate configuration/software transfer and adaptation",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Validate configuration/software transfer and adaptation",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -735,7 +735,7 @@
     "id": "service-catalogue",
     "category": "Service functions",
     "title": "Catalogue exact supported calibrations, resets, bleeding and component tests",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": null,
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -756,7 +756,7 @@
     "id": "service-execution",
     "category": "Service functions",
     "title": "Execute individually documented service routine",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Execute individually documented service routine",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -777,7 +777,7 @@
     "id": "key-research",
     "category": "Keys & mileage/security",
     "title": "Research exact V40 key operations",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": null,
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -797,7 +797,7 @@
     "id": "mileage-research",
     "category": "Keys & mileage/security",
     "title": "Research exact V40 mileage/security operations",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": null,
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -817,7 +817,7 @@
     "id": "repair-search",
     "category": "Fault & repair guide",
     "title": "Search code, symptom and system for causes and diagnostic direction",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Search code, symptom and system for causes and diagnostic direction",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -837,7 +837,7 @@
     "id": "repair-material",
     "category": "Fault & repair guide",
     "title": "Display wiring, connectors, locations and repair procedures",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Display wiring, connectors, locations and repair procedures",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -857,7 +857,7 @@
     "id": "support-history",
     "category": "Remote assistance",
     "title": "Maintain support-case history",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Maintain support-case history",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -877,7 +877,7 @@
     "id": "support-bundle",
     "category": "Remote assistance",
     "title": "Preview and export redacted diagnostic bundle",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Preview and export redacted diagnostic bundle",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"
@@ -897,7 +897,7 @@
     "id": "support-handoff",
     "category": "Remote assistance",
     "title": "Hand off explicitly to an existing support provider",
-    "sourceClaim": "User-supplied 13-category Nordlink baseline (2026-10-29); reference website not inspected (proxy 403).",
+    "sourceClaim": "User-supplied 13-category baseline (2026-10-29); public VCTS claims audited in docs/reference-audit.md. Actual vehicle applicability and hardware evidence remain unverified.",
     "exactOperation": "Hand off explicitly to an existing support provider",
     "moduleApplicability": [
       "2013 Volvo V40 D2 \u2014 actual module identities unresolved"

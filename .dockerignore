@@ -1,0 +1,16 @@
+.git
+**/node_modules
+**/bin
+**/obj
+**/wwwroot
+artifacts
+data
+.local
+test-results
+frontend/test-results
+playwright-report
+**/*.dpapi
+**/launch*.json
+.env
+.env.*
+**/*.log

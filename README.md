@@ -4,6 +4,10 @@ A local browser workspace for a **2013 Volvo V40 D2**, with a React/TypeScript/V
 
 **This is a tested foundation, not a working vehicle diagnostic/programming release.** Hardware identity is unknown. No CEM decoder algorithm, vehicle transport definitions, licensed diagnostic/repair packs, firmware procedures or validated vehicle writes are included. Simulation cannot establish hardware readiness. [The feature register](docs/feature-register.json) tracks all 13 requested categories; [the hardware queue](docs/hardware-validation.md) lists the evidence needed to progress.
 
+## Online website + Windows helper
+
+The cloud service and Windows helper are documented in [cloud.md](docs/cloud.md). Build with `bash scripts/build-cloud.sh`; test with `NORDLINK_CHROMIUM=/usr/bin/chromium bash scripts/validate-cloud.sh`. Heroku deployment files are included. Public deployment requires your own Heroku app and securely configured workspace password; no app or hosting plan has been created here. Vehicle prerequisites still apply. The local workflow below remains available.
+
 ## Run on Linux
 
 Use Node **24.19.0** (`.nvmrc`) and .NET SDK **10.0.403** (`global.json`). In this cloud environment the SDK is installed at `/workspace/.tools/dotnet`, checked against Microsoft's published SHA-512. Work in the existing `/workspace/volvo` checkout; a new worktree is unnecessary.
